@@ -14,3 +14,8 @@ export const fetchCarsList = async page => {
   const { data } = await instance.get(`/cars?page=${page}&limit=${limit}`);
   return data;
 };
+
+export const fetchCarById = async(id) => {
+  const {data} = await instance.get(`/cars?id=${id}`)
+  return data[0]
+}
