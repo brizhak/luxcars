@@ -40,32 +40,32 @@ export const LogoContainer = styled(Link)`
 `;
 
 export const LogoIcon = styled(IoCarSport)`
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   @media screen and (min-width: 768px) {
-    width: 25px;
-    height: 25px;
-  }
-  @media screen and (min-width: 1158px) {
     width: 30px;
     height: 30px;
+  }
+  @media screen and (min-width: 1158px) {
+    width: 35px;
+    height: 35px;
   }
 `;
 
 export const Logo = styled.p`
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 500;
   @media screen and (min-width: 768px) {
-    font-size: 20px;
+    font-size: 25px;
   }
   @media screen and (min-width: 1158px) {
-    font-size: 25px;
+    font-size: 30px;
   }
 `;
 
 export const BurgerMenu = styled(FiMenu)`
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   color: #313131;
   display: none;
   @media screen and (max-width: 767px) { 
