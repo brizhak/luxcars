@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <HeroWrapper>
       <HeroText>
-      We offer the perfect cars for traveling. <br/> Start your journey with us!
+      Rent your dream car with our service. <br/> Start your journey with us!
       </HeroText>
       <HeroButton to="/catalog">See the catalog</HeroButton>
     </HeroWrapper>

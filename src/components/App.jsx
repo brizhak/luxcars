@@ -8,11 +8,10 @@ import {
   SecondHeaderContainer,
   LogoContainer,
   LogoIcon,
-  LogoutButton,
   Logo,
   BurgerMenu,
   LogoutIcon,
-  LogoutContainer
+  LogoutButton
 } from './App.styled';
 
 const Home = lazy(() => import('../pages/HomePage'));
@@ -37,10 +36,7 @@ export const App = () => {
               <StyledNavLink to={'/login'}>Login</StyledNavLink>
               <StyledNavLink to={'/register'}>Register</StyledNavLink>
               <StyledNavLink to={'/favorites'}>Favorites</StyledNavLink>
-              <LogoutContainer>
-                <LogoutButton type='button'>Logout</LogoutButton>
-                <LogoutIcon/>
-              </LogoutContainer>
+                <LogoutButton><LogoutIcon/></LogoutButton>
             </NavContainer>
             <BurgerMenu/>
           </SecondHeaderContainer>
