@@ -1,13 +1,14 @@
 import React from 'react';
-import FilterField from '../../components/FilterField';
+// import FilterField from '../../components/FilterField';
 import SectionTemplate from 'components/SectionTemplate';
-import CarsList from 'components/CarsList';
+// import CarsList from 'components/CarsList';
 
 const CatalogPage = () => {
   return (
     <SectionTemplate>
-      <FilterField />
-      <CarsList />
+      {/* <FilterField />
+      <CarsList /> */}
+      CarList
     </SectionTemplate>
   );
 };

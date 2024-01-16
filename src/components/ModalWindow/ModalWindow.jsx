@@ -40,4 +40,4 @@ export const ModalWindow = ({carId, closeModal}) => {
  
   };
 
-export default ModalWindow;
+// export default ModalWindow;

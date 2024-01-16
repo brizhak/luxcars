@@ -1,1 +1,1 @@
-export { default } from './SelectProperties.jsx';
+// export { default } from './SelectProperties.jsx';

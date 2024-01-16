@@ -1,32 +1,70 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import bgImage from '../../assets/bg-min.jpg'
 
 export const HeroWrapper = styled.div`
-  background-image: url('../../assets/bg-picture.png');
-  background-size: 300px;
+  background-color: #111;
+  background-image: url(${bgImage});
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
   display: flex;
+  width: 100%;
+  height: calc(100vh - 40px);
   flex-direction: column;
   align-items: center;
+  justify-content: end;
+  gap: 20px;
+  padding: 10px;
+  padding-bottom: 100px;
+  @media screen and (min-width: 428px) {
+    gap: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    background-position: 100% 50%;
+    height: calc(100vh - 49px);
+  }
+  @media screen and (min-width: 1158px) {
+    padding-bottom: 100px;
+    height: calc(100vh - 60px);
+  }
 `;
 
 export const HeroText = styled.p`
-  font-size: 25px;
-  font-weight: 400;
-  padding-top: 200px;
-  width: 700px;
+  font-size: 18px;
+  width: 100%;
   text-align: center;
+  color: #fff;
+  @media screen and (min-width: 428px) {
+    font-size: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 23px;
+  }
+  @media screen and (min-width: 1158px) {
+    font-size: 28px;
+    
+  }
 `;
 
 export const HeroButton = styled(Link)`
-  font-size: 25px;
+  font-size: 18px;
   text-decoration: none;
-  margin-top: 10px;
-  background-color: #0029ff;
-  border-radius: 12px;
+  background-color: var(--accent-color);
   color: white;
   padding: 3px 10px;
   transition: all 0.3s;
   &:hover {
-    background-color: #001db5;
+    background-color: var(--darker-accent-color);
+  }
+  @media screen and (min-width: 428px) {
+    font-size: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 23px;
+  }
+  @media screen and (min-width: 1158px) {
+    font-size: 28px;
+    
   }
 `;

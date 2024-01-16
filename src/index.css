@@ -1,11 +1,30 @@
 @import-normalize;
 
+:root {
+  --accent-color: #0F63F5;
+  --darker-accent-color: #0349C1;
+  --main-text-color: #313131;
+  --second-text-color: #fff;
+}
+
 body {
   margin: 0;
-  color: rgba(0, 0, 0, 0.75);
+  padding: 0;
+  color: var(--main-text-color);
   font-family: 'Inter', sans-serif;
+  font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  line-height: 1.15;
+}
+
+header {
+  background-color: #fff;
+}
+
+main {
+  background-color: #111;
 }
 
 code {
@@ -17,9 +36,11 @@ a {
   color: #313131;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
+  padding: 0;
 }
+
 
 select {
   height: 48px;
@@ -31,15 +52,16 @@ select {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  background-image: url('data:image/svg+xml;utf8,<svg fill="%23313131" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+  /* background-image: url('data:image/svg+xml;utf8,<svg fill="%23313131" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
   background-repeat: no-repeat;
   background-position: right 18px center;
-  background-size: 20px;
+  background-size: 20px; */
   outline: none;
+  transition: all 0.3s;
 }
 
-select:focus {
-  border: 2px solid #3470FF;
+select:focus, select:hover {
+  border: 1px solid #3470FF;
 }
 
 input {
@@ -49,15 +71,17 @@ input {
   border-color: transparent;
   background-color: #F7F7FB;
   outline: #3470FF;
+  transition: all 0.3s;
 }
 
-input:focus {
-  border: 2px solid #3470FF;
+input:focus, input:hover {
+  border: 1px solid #3470FF;
 }
 
 
 button {
   cursor: pointer;
+  display: block;
 }
 
 
