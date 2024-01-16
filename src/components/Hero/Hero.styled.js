@@ -10,7 +10,7 @@ export const HeroWrapper = styled.div`
   background-size: cover;
   display: flex;
   width: 100%;
-  height: calc(100vh - 45px);
+  height: calc(100vh - 65px);
   flex-direction: column;
   align-items: center;
   justify-content: end;
@@ -19,14 +19,15 @@ export const HeroWrapper = styled.div`
   padding-bottom: 100px;
   @media screen and (min-width: 428px) {
     gap: 30px;
+    height: calc(100vh - 75px);
   }
   @media screen and (min-width: 768px) {
     background-position: 100% 50%;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 80px);
   }
   @media screen and (min-width: 1158px) {
     padding-bottom: 100px;
-    height: calc(100vh - 65px);
+    height: calc(100vh - 55px);
     gap: 40px;
   }
 `;

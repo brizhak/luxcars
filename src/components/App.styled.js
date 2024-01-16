@@ -17,7 +17,7 @@ export const SecondHeaderContainer = styled.div`
 
   @media screen and (min-width: 428px) {
     width: 100%;
-    padding: 20px 25px;
+    padding: 25px 25px;
   }
 
   @media screen and (min-width: 768px) {
@@ -25,7 +25,7 @@ export const SecondHeaderContainer = styled.div`
   }
 
   @media screen and (min-width: 1158px) {
-    padding: 30px 35px;
+    padding: 10px 35px;
     width: 1158px;
   }
 `
