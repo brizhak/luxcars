@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkluxcars=self.webpackChunkluxcars||[]).push([[888],{4888:function(n,r,u){u.r(r),u.d(r,{default:function(){return s}});u(2791);var i,t=u(168),e=u(5867).ZP.div(i||(i=(0,t.Z)(["\n  width: 1264px;\n  margin: 0 auto;\n  padding: 20px 40px;\n  height: 100%;\n"]))),c=u(3329),a=function(n){var r=n.children;return(0,c.jsx)(e,{children:r})},s=function(){return(0,c.jsx)(a,{children:"CarList"})}}}]);
+//# sourceMappingURL=888.855e6d92.chunk.js.map
