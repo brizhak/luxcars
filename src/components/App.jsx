@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Loader from './Loader';
+import ModalWindowMobileMenu from './ModalWindowMobileMenu';
 import {
   NavContainer,
   StyledNavLink,
@@ -23,6 +24,7 @@ const Register = lazy(()=> import('../pages/RegisterPage'))
 export const App = () => {
   return (
     <>
+    <ModalWindowMobileMenu/>
       <header>
         <MainHeaderContainer>
           <SecondHeaderContainer>
@@ -41,6 +43,7 @@ export const App = () => {
             <BurgerMenu/>
           </SecondHeaderContainer>
         </MainHeaderContainer>
+        
       </header>
       <main>
         <Suspense fallback={<Loader />}>
@@ -54,6 +57,7 @@ export const App = () => {
           </Routes>
         </Suspense>
       </main>
+      
     </>
   );
 };

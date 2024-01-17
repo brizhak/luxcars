@@ -22,12 +22,11 @@ export const HeroWrapper = styled.div`
     height: calc(95vh - 75px);
   }
   @media screen and (min-width: 768px) {
-    background-position: 100% 50%;
-    height: calc(95vh - 80px);
+    height: calc(100vh - 80px);
   }
   @media screen and (min-width: 1158px) {
     padding-bottom: 100px;
-    height: calc(95vh - 55px);
+    height: calc(100vh - 55px);
     gap: 40px;
   }
 `;
@@ -43,10 +42,10 @@ export const HeroText = styled.p`
   @media screen and (min-width: 768px) {
     font-size: 30px;
   }
-  @media screen and (min-width: 1158px) {
+  /* @media screen and (min-width: 1158px) {
     font-size: 35px;
     
-  }
+  } */
 `;
 
 export const HeroButton = styled(Link)`
@@ -56,6 +55,9 @@ export const HeroButton = styled(Link)`
   color: white;
   padding: 3px 10px;
   transition: all 0.3s;
+  &:focus {
+    background-color: var(--darker-accent-color);
+  }
   &:hover {
     background-color: var(--darker-accent-color);
   }
@@ -65,8 +67,8 @@ export const HeroButton = styled(Link)`
   @media screen and (min-width: 768px) {
     font-size: 30px;
   }
-  @media screen and (min-width: 1158px) {
+  /* @media screen and (min-width: 1158px) {
     font-size: 35px;
     
-  }
+  } */
 `;

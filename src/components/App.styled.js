@@ -41,11 +41,15 @@ export const LogoContainer = styled(Link)`
   &:hover {
     color: var(--accent-color);
   }
+  &:focus {
+    color: var(--accent-color);
+  }
 `;
 
 export const LogoIcon = styled(IoCarSport)`
   width: 25px;
   height: 25px;
+  color: var(--main-text-color);
 
   @media screen and (min-width: 768px) {
     width: 30px;
@@ -74,11 +78,17 @@ export const Logo = styled.p`
 export const BurgerMenu = styled(FiMenu)`
   width: 25px;
   height: 25px;
-  color: #313131;
+  color: var(--main-text-color);
   display: none;
-
+  transition: all 0.3s;
   @media screen and (max-width: 767px) { 
     display: block;
+  }
+  &:hover {
+    color: var(--accent-color);
+  }
+  &:focus {
+    color: var(--accent-color);
   }
 `
 
@@ -87,7 +97,7 @@ export const StyledNavLink = styled(NavLink)`
   padding: 3px 5px;
   display: inline-block;
   text-decoration: none;
-  color: #313131;
+  color: var(--main-text-color);
   border-bottom: 1px solid transparent;
   cursor: pointer;
   transition: all 0.3s;
@@ -97,7 +107,10 @@ export const StyledNavLink = styled(NavLink)`
   &:hover {
     color: var(--accent-color);
   }
-
+  &.focus {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+  }
   &.active {
     border: 1px solid var(--accent-color);
     color: var(--accent-color);
@@ -120,18 +133,17 @@ export const LogoutButton = styled.button`
   border: none;
   padding: 0px;
   color: inherit;
+  transition: all 0.3s;
+  &:hover {
+    color: var(--accent-color);
+  }
+  &.focus {
+    color: var(--accent-color);
+  }
 `
 export const LogoutIcon = styled(FiLogOut)`
   color: var(--main-text-color);
   width: 20px;
   height: 20px;
-  /* @media screen and (min-width: 768px) {
-    width: 25px;
-    height: 25px;
-  }
-  @media screen and (min-width: 1158px) {
-    width: 30px;
-    height: 30px;
-  } */
 
 `

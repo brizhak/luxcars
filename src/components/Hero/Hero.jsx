@@ -8,7 +8,7 @@ const Hero = () => {
       <HeroText>
       Rent your dream car with our service. <br/> Start your journey with us!
       </HeroText>
-      <HeroButton to="/catalog">See the catalog</HeroButton>
+      <HeroButton to="/catalog">View the catalog</HeroButton>
     </HeroWrapper>
   );
 };
