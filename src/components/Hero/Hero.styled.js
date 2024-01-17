@@ -31,6 +31,7 @@ export const HeroWrapper = styled.div`
   }
 `;
 
+
 export const HeroText = styled.p`
   font-size: 20px;
   width: 100%;
