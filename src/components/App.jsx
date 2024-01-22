@@ -1,33 +1,43 @@
 import { lazy, Suspense } from 'react';
+import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Loader from './Loader';
 import ModalWindowMobileMenu from './ModalWindowMobileMenu';
+import SectionTemplate from './SectionTemplate';
 import {
   NavContainer,
   StyledNavLink,
   MainHeaderContainer,
-  SecondHeaderContainer,
   LogoContainer,
   LogoIcon,
   Logo,
   BurgerMenu,
   LogoutIcon,
-  LogoutButton
+  LogoutButton,
 } from './App.styled';
 
 const Home = lazy(() => import('../pages/HomePage'));
 const Catalog = lazy(() => import('../pages/CatalogPage'));
 const Favorites = lazy(() => import('../pages/FavoritesPage'));
-const Login = lazy(()=> import('../pages/LoginPage'))
-const Register = lazy(()=> import('../pages/RegisterPage'))
+const Login = lazy(() => import('../pages/LoginPage'));
+const Register = lazy(() => import('../pages/RegisterPage'));
 
 export const App = () => {
+  const [isOpenModal, setIsOpenModal] = useState(false)
+
+  const openModal = () => {
+    setIsOpenModal(true)
+  }
+
+  const closeModal = () => {
+    setIsOpenModal(false)
+  }
+
   return (
     <>
-    <ModalWindowMobileMenu/>
       <header>
-        <MainHeaderContainer>
-          <SecondHeaderContainer>
+        <SectionTemplate>
+          <MainHeaderContainer>
             <LogoContainer to="/">
               <LogoIcon />
               <Logo>LUX CARS</Logo>
@@ -38,12 +48,14 @@ export const App = () => {
               <StyledNavLink to={'/login'}>Login</StyledNavLink>
               <StyledNavLink to={'/register'}>Register</StyledNavLink>
               <StyledNavLink to={'/favorites'}>Favorites</StyledNavLink>
-                <LogoutButton><LogoutIcon/></LogoutButton>
+              <LogoutButton>
+                <LogoutIcon />
+              </LogoutButton>
             </NavContainer>
-            <BurgerMenu/>
-          </SecondHeaderContainer>
-        </MainHeaderContainer>
-        
+            <BurgerMenu onClick={openModal}/>
+          </MainHeaderContainer>
+        </SectionTemplate>
+        <ModalWindowMobileMenu closeModal={closeModal} isOpenModal={isOpenModal}/>
       </header>
       <main>
         <Suspense fallback={<Loader />}>
@@ -51,13 +63,12 @@ export const App = () => {
             <Route path="/" element={<Home />}></Route>
             <Route path="/catalog" element={<Catalog />}></Route>
             <Route path="/favorites" element={<Favorites />}></Route>
-            <Route path="/login" element={<Login/>}></Route>
-            <Route path="/register" element={<Register/>}></Route>
+            <Route path="/login" element={<Login />}></Route>
+            <Route path="/register" element={<Register />}></Route>
             {/* <Route path="*" element={<NotFoundPage />}></Route> */}
           </Routes>
         </Suspense>
       </main>
-      
     </>
   );
 };

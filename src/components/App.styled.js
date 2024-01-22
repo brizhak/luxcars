@@ -4,31 +4,51 @@ import { IoCarSport } from 'react-icons/io5';
 import { FiMenu, FiLogOut} from "react-icons/fi";
 
 export const MainHeaderContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 100%;
-`;
-
-export const SecondHeaderContainer = styled.div`
-  padding: 20px 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
-  width: 320px;
-
   @media screen and (min-width: 428px) {
-    width: 100%;
-    padding: 25px 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
+  @media screen and (min-width: 1158px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+`
 
+export const LogoIcon = styled(IoCarSport)`
+  width: 25px;
+  height: 25px;
+  color: var(--main-text-color);
+  transition: all 0.3s;
   @media screen and (min-width: 768px) {
-    width: 768px;
+    width: 30px;
+    height: 30px;
   }
 
   @media screen and (min-width: 1158px) {
-    padding: 10px 35px;
-    width: 1158px;
+    width: 35px;
+    height: 35px;
   }
-`
+
+  
+`;
+
+export const Logo = styled.p`
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+
+  @media screen and (min-width: 768px) {
+    font-size: 25px;
+  }
+
+  @media screen and (min-width: 1158px) {
+    font-size: 30px;
+  }
+`;
 
 export const LogoContainer = styled(Link)`
   display: flex;
@@ -40,46 +60,19 @@ export const LogoContainer = styled(Link)`
 
   &:hover {
     color: var(--accent-color);
-  }
-  &:focus {
-    color: var(--accent-color);
-  }
-`;
 
-export const LogoIcon = styled(IoCarSport)`
-  width: 25px;
-  height: 25px;
-  color: var(--main-text-color);
-
-  @media screen and (min-width: 768px) {
-    width: 30px;
-    height: 30px;
+    ${LogoIcon} {
+      color: var(--accent-color);
+    }
   }
-
-  @media screen and (min-width: 1158px) {
-    width: 35px;
-    height: 35px;
-  }
-`;
-
-export const Logo = styled.p`
-  font-size: 20px;
-  font-weight: 500;
-
-  @media screen and (min-width: 768px) {
-    font-size: 25px;
-  }
-
-  @media screen and (min-width: 1158px) {
-    font-size: 30px;
-  }
-`;
+`
 
 export const BurgerMenu = styled(FiMenu)`
   width: 25px;
   height: 25px;
   color: var(--main-text-color);
   display: none;
+  cursor: pointer;
   transition: all 0.3s;
   @media screen and (max-width: 767px) { 
     display: block;
@@ -95,6 +88,7 @@ export const BurgerMenu = styled(FiMenu)`
 export const StyledNavLink = styled(NavLink)`
   font-size: 15px;
   padding: 3px 5px;
+  font-weight: 500;
   display: inline-block;
   text-decoration: none;
   color: var(--main-text-color);
@@ -107,10 +101,7 @@ export const StyledNavLink = styled(NavLink)`
   &:hover {
     color: var(--accent-color);
   }
-  &.focus {
-    border: 1px solid var(--accent-color);
-    color: var(--accent-color);
-  }
+
   &.active {
     border: 1px solid var(--accent-color);
     color: var(--accent-color);
@@ -133,17 +124,24 @@ export const LogoutButton = styled.button`
   border: none;
   padding: 0px;
   color: inherit;
-  transition: all 0.3s;
-  &:hover {
-    color: var(--accent-color);
-  }
-  &.focus {
-    color: var(--accent-color);
-  }
+
 `
 export const LogoutIcon = styled(FiLogOut)`
   color: var(--main-text-color);
   width: 20px;
   height: 20px;
+  transition: all 0.3s;
+  &:hover {
+    color: var(--accent-color);
+  }
+
+  /* @media screen and (min-width: 768px) {
+    width: 25px;
+    height: 25px;
+  }
+  @media screen and (min-width: 1158px) {
+    width: 30px;
+    height: 30px;
+  } */
 
 `

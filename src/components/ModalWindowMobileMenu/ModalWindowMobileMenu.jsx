@@ -1,19 +1,22 @@
 import React from 'react'
+// import { useState } from 'react'
 import { StyledNavLink, MainContainer, CloseIcon, NavContainer, LogoutIcon } from './ModalWindowMobileMenu.module.styled'
-const ModalWindowMobileMenu = () => {
+
+const ModalWindowMobileMenu = ({closeModal, isOpenModal}) => {
+
   return (
-    <MainContainer>
-      <CloseIcon/>
+    <MainContainer style={{ display: isOpenModal ? 'flex' : 'none' }}>
+      <CloseIcon onClick={closeModal} />
       <NavContainer>
-        <StyledNavLink>Home</StyledNavLink>
-        <StyledNavLink>Catalog</StyledNavLink>
-        <StyledNavLink>Login</StyledNavLink>
-        <StyledNavLink>Register</StyledNavLink>
-        <StyledNavLink>Favorites</StyledNavLink>
+        <StyledNavLink to={'/'} onClick={closeModal}>Home</StyledNavLink>
+        <StyledNavLink to={'/catalog'} onClick={closeModal}>Catalog</StyledNavLink>
+        <StyledNavLink to={'/login'} onClick={closeModal}>Login</StyledNavLink>
+        <StyledNavLink to={'/register'} onClick={closeModal}>Register</StyledNavLink>
+        <StyledNavLink to={'/favorites'} onClick={closeModal}>Favorites</StyledNavLink>
       </NavContainer>
-      <LogoutIcon/>
+      <LogoutIcon />
     </MainContainer>
-  )
-}
+  );
+};
 
 export default ModalWindowMobileMenu
