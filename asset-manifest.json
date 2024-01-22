@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/luxcars/static/css/main.21d1e693.css",
-    "main.js": "/luxcars/static/js/main.bfb9cba9.js",
-    "static/js/816.6302039d.chunk.js": "/luxcars/static/js/816.6302039d.chunk.js",
-    "static/js/888.3424b717.chunk.js": "/luxcars/static/js/888.3424b717.chunk.js",
+    "main.css": "/luxcars/static/css/main.741c2c63.css",
+    "main.js": "/luxcars/static/js/main.e62192ba.js",
+    "static/js/816.a6cc20ec.chunk.js": "/luxcars/static/js/816.a6cc20ec.chunk.js",
+    "static/js/837.d63d6c3a.chunk.js": "/luxcars/static/js/837.d63d6c3a.chunk.js",
     "static/js/681.420e9baf.chunk.js": "/luxcars/static/js/681.420e9baf.chunk.js",
     "static/js/175.d1533d60.chunk.js": "/luxcars/static/js/175.d1533d60.chunk.js",
     "static/js/644.266812ca.chunk.js": "/luxcars/static/js/644.266812ca.chunk.js",
     "static/media/bg-min.jpg": "/luxcars/static/media/bg-min.12dcb08004a6c2dc02c8.jpg",
     "index.html": "/luxcars/index.html",
-    "main.21d1e693.css.map": "/luxcars/static/css/main.21d1e693.css.map",
-    "main.bfb9cba9.js.map": "/luxcars/static/js/main.bfb9cba9.js.map",
-    "816.6302039d.chunk.js.map": "/luxcars/static/js/816.6302039d.chunk.js.map",
-    "888.3424b717.chunk.js.map": "/luxcars/static/js/888.3424b717.chunk.js.map",
+    "main.741c2c63.css.map": "/luxcars/static/css/main.741c2c63.css.map",
+    "main.e62192ba.js.map": "/luxcars/static/js/main.e62192ba.js.map",
+    "816.a6cc20ec.chunk.js.map": "/luxcars/static/js/816.a6cc20ec.chunk.js.map",
+    "837.d63d6c3a.chunk.js.map": "/luxcars/static/js/837.d63d6c3a.chunk.js.map",
     "681.420e9baf.chunk.js.map": "/luxcars/static/js/681.420e9baf.chunk.js.map",
     "175.d1533d60.chunk.js.map": "/luxcars/static/js/175.d1533d60.chunk.js.map",
     "644.266812ca.chunk.js.map": "/luxcars/static/js/644.266812ca.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.21d1e693.css",
-    "static/js/main.bfb9cba9.js"
+    "static/css/main.741c2c63.css",
+    "static/js/main.e62192ba.js"
   ]
 }

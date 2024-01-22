@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkluxcars=self.webpackChunkluxcars||[]).push([[837],{837:function(u,n,r){r.r(n),r.d(n,{default:function(){return s}});r(791);var c=r(777),e=r(184),s=function(){return(0,e.jsx)(c.Z,{children:"CarList"})}}}]);
+//# sourceMappingURL=837.d63d6c3a.chunk.js.map
