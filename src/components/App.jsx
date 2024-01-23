@@ -45,8 +45,8 @@ export const App = () => {
             <NavContainer>
               <StyledNavLink to={'/'}>Home</StyledNavLink>
               <StyledNavLink to={'/catalog'}>Catalog</StyledNavLink>
-              <StyledNavLink to={'/login'}>Login</StyledNavLink>
-              <StyledNavLink to={'/register'}>Register</StyledNavLink>
+              <StyledNavLink to={'/login'}>Sign in</StyledNavLink>
+              <StyledNavLink to={'/register'}>Sign up</StyledNavLink>
               <StyledNavLink to={'/favorites'}>Favorites</StyledNavLink>
               <LogoutButton>
                 <LogoutIcon />

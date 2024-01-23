@@ -27,7 +27,7 @@ export const FormContainer = styled.div`
   }
 `
 
-export const LoginForm = styled.form`
+export const RegisterForm = styled.form`
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -39,7 +39,7 @@ export const LoginForm = styled.form`
   }
 `
 
-export const LoginInput = styled.input`
+export const RegisterInput = styled.input`
   width: 100%;
   height: 50px;
   border-radius: 40px;
@@ -51,8 +51,7 @@ export const LoginInput = styled.input`
   }
 `
 
-
-export const LoginButton = styled.button`
+export const RegisterButton = styled.button`
   font-size: 16px;
   text-decoration: none;
   color: var(--second-text-color);
@@ -75,7 +74,7 @@ export const LoginButton = styled.button`
   }
 `
 
-export const RegistrationText = styled.p`
+export const LoginText = styled.p`
   text-align: center;
   font-size: 14px;
   @media screen and (min-width: 1158px) {
@@ -83,7 +82,7 @@ export const RegistrationText = styled.p`
   }
 `
 
-export const RegistrationLink = styled(Link)`
+export const LoginLink = styled(Link)`
   transition: all 0.3s;
   &:hover {
     color: var(--accent-color);

@@ -1,17 +1,19 @@
 import React from 'react';
-import { MainContainer, FormContainer, LoginForm, LoginInput, LoginButton, RegistrationText, RegistrationLink } from './Login.styled';
+import { MainContainer, FormContainer, RegisterForm, RegisterInput, RegisterButton, LoginText, LoginLink } from './Register.styled';
 import { Formik } from 'formik';
 import styled from 'styled-components';
 
-const Login = () => {
+const Register = () => {
   return (
     <MainContainer>
       <FormContainer>
         <Formik
-          initialValues={{ email: '', password: '' }}
+          initialValues={{ name: '', email: '', password: '' }}
           validate={values => {
             const errors = {};
-            if (!values.email) {
+            if (!values.name) {
+              errors.name = 'Please enter name';
+            } else if (!values.email) {
               errors.email = 'Please enter email';
             } else if (!values.password) {
               errors.password = 'Please enter password';
@@ -38,8 +40,17 @@ const Login = () => {
             handleSubmit,
             isSubmitting,
           }) => (
-            <LoginForm onSubmit={handleSubmit}>
-              <LoginInput
+            <RegisterForm onSubmit={handleSubmit}>
+              <RegisterInput
+                type="text"
+                name="name"
+                placeholder="Name"
+                onChange={handleChange}
+                onBlur={handleBlur}
+                value={values.name}
+              />
+              {errors.name && touched.name && <ErrorMessage>{errors.name}</ErrorMessage>}
+              <RegisterInput
                 type="email"
                 name="email"
                 placeholder="Email"
@@ -48,20 +59,20 @@ const Login = () => {
                 value={values.email}
               />
               {errors.email && touched.email && <ErrorMessage>{errors.email}</ErrorMessage>}
-              <LoginInput
+              <RegisterInput
                 type="password"
                 name="password"
-                placeholder='Password'
+                placeholder="Password"
                 onChange={handleChange}
                 onBlur={handleBlur}
                 value={values.password}
               />
               {errors.password && touched.password && <ErrorMessage>{errors.password}</ErrorMessage>}
-              <LoginButton type="submit" disabled={isSubmitting}>
-                Sign in
-              </LoginButton>
-              <RegistrationText>If you don't have an account yet, please <RegistrationLink to={'/register'}>sign up</RegistrationLink></RegistrationText>
-            </LoginForm>
+              <RegisterButton type="submit" disabled={isSubmitting}>
+                Sign up
+              </RegisterButton>
+              <LoginText>If you already have an account, please <LoginLink to={'/login'}>sign in</LoginLink></LoginText>
+            </RegisterForm>
           )}
         </Formik>
       </FormContainer>
@@ -74,4 +85,6 @@ const ErrorMessage = styled.div`
   margin-top: 5px;
   font-size: 14px; 
 `;
-export default Login;
+
+export default Register;
+

@@ -1,10 +1,12 @@
 import React from 'react'
+import SectionTemplate from 'components/SectionTemplate'
+import Register from 'components/Register'
 
 const RegisterPage = () => {
   return (
-    <div>
-      Register
-    </div>
+    <SectionTemplate>
+      <Register/>
+    </SectionTemplate>
   )
 }
 

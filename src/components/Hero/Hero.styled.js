@@ -37,12 +37,12 @@ export const HeroText = styled.h1`
   font-weight: 300;
   width: 100%;
   text-align: center;
-  color: #fff;
-  /* @media screen and (min-width: 428px) {
-    font-size: 25px;
-  } */
+  color: var(--second-text-color);
   @media screen and (min-width: 768px) {
-    font-size: 25px;
+    font-size: 23px;
+  }
+  @media screen and (min-width: 1158px) {
+    font-size: 26px;
   }
 `;
 
@@ -62,8 +62,14 @@ export const HeroButton = styled(Link)`
   &:hover {
     background-color: var(--darker-accent-color);
   }
-  @media screen and (min-width: 1158px){
-    height: 64px;
+  @media screen and (min-width: 768px) {
+    width: 250px;
+    height: 57px;
     font-size: 18px;
+  }
+  @media screen and (min-width: 1158px) {
+    width: 300px;
+    height: 64px;
+    font-size: 20px;
   }
 `;
