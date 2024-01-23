@@ -1,24 +1,26 @@
 {
   "files": {
-    "main.css": "/luxcars/static/css/main.741c2c63.css",
-    "main.js": "/luxcars/static/js/main.e62192ba.js",
-    "static/js/816.a6cc20ec.chunk.js": "/luxcars/static/js/816.a6cc20ec.chunk.js",
+    "main.css": "/luxcars/static/css/main.263a4156.css",
+    "main.js": "/luxcars/static/js/main.9a8a5d29.js",
+    "static/js/816.23d57775.chunk.js": "/luxcars/static/js/816.23d57775.chunk.js",
     "static/js/837.d63d6c3a.chunk.js": "/luxcars/static/js/837.d63d6c3a.chunk.js",
     "static/js/681.420e9baf.chunk.js": "/luxcars/static/js/681.420e9baf.chunk.js",
-    "static/js/175.d1533d60.chunk.js": "/luxcars/static/js/175.d1533d60.chunk.js",
+    "static/js/467.ad65ec3f.chunk.js": "/luxcars/static/js/467.ad65ec3f.chunk.js",
     "static/js/644.266812ca.chunk.js": "/luxcars/static/js/644.266812ca.chunk.js",
+    "static/js/705.706b7294.chunk.js": "/luxcars/static/js/705.706b7294.chunk.js",
     "static/media/bg-min.jpg": "/luxcars/static/media/bg-min.12dcb08004a6c2dc02c8.jpg",
     "index.html": "/luxcars/index.html",
-    "main.741c2c63.css.map": "/luxcars/static/css/main.741c2c63.css.map",
-    "main.e62192ba.js.map": "/luxcars/static/js/main.e62192ba.js.map",
-    "816.a6cc20ec.chunk.js.map": "/luxcars/static/js/816.a6cc20ec.chunk.js.map",
+    "main.263a4156.css.map": "/luxcars/static/css/main.263a4156.css.map",
+    "main.9a8a5d29.js.map": "/luxcars/static/js/main.9a8a5d29.js.map",
+    "816.23d57775.chunk.js.map": "/luxcars/static/js/816.23d57775.chunk.js.map",
     "837.d63d6c3a.chunk.js.map": "/luxcars/static/js/837.d63d6c3a.chunk.js.map",
     "681.420e9baf.chunk.js.map": "/luxcars/static/js/681.420e9baf.chunk.js.map",
-    "175.d1533d60.chunk.js.map": "/luxcars/static/js/175.d1533d60.chunk.js.map",
-    "644.266812ca.chunk.js.map": "/luxcars/static/js/644.266812ca.chunk.js.map"
+    "467.ad65ec3f.chunk.js.map": "/luxcars/static/js/467.ad65ec3f.chunk.js.map",
+    "644.266812ca.chunk.js.map": "/luxcars/static/js/644.266812ca.chunk.js.map",
+    "705.706b7294.chunk.js.map": "/luxcars/static/js/705.706b7294.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.741c2c63.css",
-    "static/js/main.e62192ba.js"
+    "static/css/main.263a4156.css",
+    "static/js/main.9a8a5d29.js"
   ]
 }
