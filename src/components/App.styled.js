@@ -13,8 +13,8 @@ export const MainHeaderContainer = styled.div`
     padding-bottom: 25px;
   }
   @media screen and (min-width: 1158px) {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 `
 
@@ -92,7 +92,7 @@ export const StyledNavLink = styled(NavLink)`
   display: inline-block;
   text-decoration: none;
   color: var(--main-text-color);
-  border-bottom: 1px solid transparent;
+  border-bottom: 2px solid transparent;
   cursor: pointer;
   transition: all 0.3s;
   @media screen and (min-width: 768px) {
@@ -103,7 +103,7 @@ export const StyledNavLink = styled(NavLink)`
   }
 
   &.active {
-    border: 1px solid var(--accent-color);
+    border-color: var(--accent-color);
     color: var(--accent-color);
   }
 `;

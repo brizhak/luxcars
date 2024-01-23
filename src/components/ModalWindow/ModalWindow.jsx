@@ -16,6 +16,7 @@ export const ModalWindow = ({carId, closeModal}) => {
      }
      fetchCar()
   }, [carId])
+  
   return (
     <Backdrop onClick={closeModal}>
     <ModalContainer>

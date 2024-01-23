@@ -4,7 +4,6 @@ import { FiX, FiLogOut } from "react-icons/fi";
 
 export const MainContainer = styled.div`
   position: fixed;
-  /* display: flex; */
   flex-direction: column;
   justify-content: space-between;
   top: 0;

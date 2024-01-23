@@ -4,9 +4,9 @@ import { IoMdClose } from 'react-icons/io';
 export const ModalContainer = styled.div`
   background-color: white;
   width: 541px;
-  padding: 0 40px 40px 40px;
+  /* padding: 0 40px 40px 40px; */
   height: auto;
-  z-index: 1001;
+  z-index: 2;
   border-radius: 24px;
 `;
 
@@ -26,8 +26,8 @@ export const Backdrop = styled.div`
 export const XIcon = styled(IoMdClose)`
 width: 24px;
 height: 24px;
-margin-top: 16px;
-margin-left: 461px;
+/* margin-top: 16px;
+margin-left: 461px; */
 `;
 
 export const CarImg = styled.img`
